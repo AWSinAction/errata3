@@ -23,4 +23,4 @@ rm -rf public/
 docker run --rm -it -v $(pwd):/src klakegg/hugo:0.83.1-ext-ubuntu --buildDrafts
 ```
 
-send file `./public/index.html` to Susan Harkins <suha@manning.com>
+send file `./public/index.html` to Rachel Gibbs <ragi@manning.com>
