@@ -10,7 +10,7 @@
 
 ### Run locally
 
-```
+```bash
 docker run --rm -it -v $(pwd):/src -p 1313:1313 klakegg/hugo:0.83.1-ext-ubuntu server --buildDrafts --bind 0.0.0.0 -w
 ```
 
@@ -18,9 +18,10 @@ Open http://localhost:1313/ to see the site.
 
 ### Generate HTML
 
-```
+```bash
 rm -rf public/
 docker run --rm -it -v $(pwd):/src klakegg/hugo:0.83.1-ext-ubuntu --buildDrafts
+mv public/index.html ~/Downloads/aws-in-action-3rd-errata.html
 ```
 
-send file `./public/index.html` to Rachel Gibbs <ragi@manning.com>
+Send the file `~/Downloads/aws-in-action-3rd-errata.html` to Rachel Gibbs at Manning.
